@@ -1,0 +1,154 @@
+.logo,
+.main-navigation ul>li{
+	padding: 45px 0;
+}
+.btn-search:before,
+.number-product-cart a:before{
+	font-family: $font__icon-ion;
+	font-size: 22px;
+	font-weight: 700;
+}
+header{
+	background-image: url(image/bg-header.png);
+	background-size: cover;
+	.header{
+		border-bottom: 1px solid $color__background-hr;
+		display: flex;
+		.site-branding{
+			float: left;
+			max-width: 10%;
+			.logo{
+				float: left;
+			}
+		}
+
+		.main-menu{
+			float: left;
+			width: 90%;
+			font-size: 16px;
+			display: flex;
+			.main-navigation{
+				ul{
+					list-style: none;
+					padding-left: 80px;
+					li{
+						display: inline-block;
+						margin-right: 40px;
+						ul{
+							background-color: $color__background-body;
+							padding: 0 20px;
+							li{
+								padding: 15px 0px;
+							}
+						}
+					}
+				}
+			}
+
+			.menu-user-total{
+				float: right;
+				display: flex;
+				padding: 38px 0;
+				a{
+					color: $color__text-title;
+				}
+				.search{
+
+					.btn-search{
+						background: none;
+						border: none;
+						color: $color__text-title;
+						outline: 0;
+						padding: 0;
+						&:before{
+							content: url(image/icon-search.png);
+						}
+					}
+				}
+				.my-account,
+				.number-product-cart{
+					padding-left: 25px;
+				}
+
+				.my-account{
+					.user{
+						&:before{
+							content: url(image/icon-user.png);
+						}
+					}
+				}
+
+				.number-product-cart{
+					a{
+						display: flex;
+						&:before{
+							content: url(image/icon-cart.png);
+						}
+						.number-product{
+							width: 16px;
+							height: 16px;
+							font-size: 8px;
+							background-color: $color__background-number-product;
+							color: $color__background-body;
+							border-radius: 50%;
+							padding: 2px 6px;
+							// line-height: 3;
+
+						}
+					}
+				}
+
+				
+			}
+		}
+	}
+	// End header
+
+	.adv{
+		padding:95px 0 240px 0;
+		text-align: center;
+		.woocommerce-breadcrumb{
+			a{
+				color: $color__text-title;
+			}
+		}
+	}
+}
+
+#form-search-product{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+	display: none;
+	top: 0;
+	color: $color__text-button;
+	background-color: $color__background-search;
+	font-size: 30px;
+	.search-content{
+		width: 80%;
+		margin: 0 auto;
+		form{
+			width: 100%;
+			padding: 150px 0;
+			input{
+				width: 100%;
+				padding: 20px;
+				background: none;
+				font-size: 30px;
+				border-top: none;
+				border-right: none;
+				border-left: none;
+				border-bottom: 3px solid $color__background-body;
+				outline: 0;
+				color: $color__text-button;
+			}
+		}
+	}
+	.close-btn{
+		position: absolute;
+		right: 80px;
+		top: 80px;
+
+	}
+}

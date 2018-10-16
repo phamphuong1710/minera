@@ -1,0 +1,16 @@
+.woocommerce{
+
+	form{
+		table{
+
+			.quantity{
+				width: 110px;
+
+				input.qty{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}

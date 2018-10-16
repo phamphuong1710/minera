@@ -82,9 +82,9 @@ if ( ! function_exists( 'minera_setup' ) ) :
 
 
 		add_theme_support( 'woocommerce' );
-		add_theme_support( 'wc-product-gallery-zoom' );
-		add_theme_support( 'wc-product-gallery-lightbox' );
-		add_theme_support( 'wc-product-gallery-slider' );
+		// add_theme_support( 'wc-product-gallery-zoom' );
+		// add_theme_support( 'wc-product-gallery-lightbox' );
+		// add_theme_support( 'wc-product-gallery-slider' );
 	}
 endif;
 add_action( 'after_setup_theme', 'minera_setup' );
@@ -250,6 +250,42 @@ Change Add to cart
 	}
 
 	add_action( 'woocommerce_before_shop_loop_item_title', 'minera_related_product_add', 10 );
+
+/*
+Avatar size
+*/
+
+function minera_review_display_gravatar( $comment ) {
+	echo get_avatar( $comment, apply_filters( 'woocommerce_review_gravatar_size', '70' ), '' );
+}
+
+remove_action( 'woocommerce_review_before', 'woocommerce_review_display_gravatar', 10 );
+add_action( 'woocommerce_review_before', 'minera_review_display_gravatar', 10 );
+
+/*
+	add share 
+*/
+	function minera_share_with()
+	{
+	?>
+		<div class="share-product-with">
+			<?php esc_html_e( 'Share' ) ?>
+			<ul class="share-prduct">
+				<li class="facebook">
+					<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>"></a>
+				</li>
+				<li class="twitter">
+					<a href="https://twitter.com/home?status=<?php echo get_permalink(); ?>"></a></li>
+				<li class="pinterest">
+					<a href="https://pinterest.com/pin/create/button/?url=<?php echo get_permalink(); ?>"></a>
+				</li>
+			</ul>
+		</div>
+	<?php
+	}
+
+
+	add_action( 'woocommerce_single_product_summary', 'minera_share_with', 55 );
 /**
  * Implement the Custom Header feature.
  

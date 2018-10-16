@@ -46,6 +46,14 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	?>
 	</div>
 	<?php
+
+		/**
+	 * Hook: woocommerce_before_shop_loop_item.
+	 *
+	 * @hooked woocommerce_template_loop_product_link_open - 10
+	 */
+	do_action( 'woocommerce_before_shop_loop_item' );
+
 	/**
 	 * Hook: woocommerce_shop_loop_item_title.
 	 *
@@ -64,7 +72,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	/**
 	 * Hook: woocommerce_after_shop_loop_item.
 	 *
-	 * @hooked woocommerce_template_loop_product_link_close - 5
+	 * @hooked woocommerce_template_loop_product_link_close - 5    delete
 	 * @hooked woocommerce_template_loop_add_to_cart - 10
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );

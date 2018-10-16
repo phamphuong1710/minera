@@ -1,3 +1,21 @@
+.facebook a:before,
+.twitter a:before,
+.pinterest a:before{
+	font-family: $font__awesome;
+	font-size: 16px;
+}
+
+.facebook a:before{
+	content: "\f09a";
+}
+.twitter a:before{
+	content: "\f099";
+}
+.pinterest a:before{
+	content: "\f0d2";
+}
+
+
 .site-footer{
 	margin-top: 100px;
 	background-color: $color__background;
@@ -78,41 +96,35 @@
 			display: flex;
 			justify-content: flex-end;
 
-			.facebook:before,
-			.twitter:before,
-			.pinterest:before{
-				font-family: $font__awesome;
-				font-size: 16px;
-			}
 
-			.facebook:before{
-				content: "\f09a";
-			}
-			.twitter:before{
-				content: "\f099";
-			}
-			.pinterest:before{
-				content: "\f0d2";
-			}
 
 			ul{
 				padding-left: 30px;
 
 				li{
-					color: $color__text-title;
-					width: 30px;
-					height: 30px;
-					text-align: center;
-					padding-top: 4px;
+					a{
+						color: $color__text-title;
+						width: 30px;
+						height: 30px;
+						text-align: center;
+						padding-top: 4px;
+						display: block;
+					}
 
 
 					&:not(:first-child){
 						margin-left: 20px;
 					}
+
+
 					&:hover{
 						border-radius: 50%;
 						background-color: $color__background-button;
 						color: $color__text-button;
+
+						a:before{
+							color: $color__text-button;
+						}
 					}
 				}
 			}

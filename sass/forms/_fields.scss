@@ -31,3 +31,13 @@ select {
 textarea {
 	width: 100%;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"]{
+	height: 40px;
+}

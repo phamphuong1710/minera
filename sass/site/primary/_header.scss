@@ -1,6 +1,9 @@
-.logo,
-.main-navigation ul>li{
+.logo{
 	padding: 45px 0;
+}
+.main-navigation ul>li>a{
+	padding: 45px 20px;
+	font-weight: 500;
 }
 .btn-search:before,
 .number-product-cart a:before{
@@ -8,7 +11,7 @@
 	font-size: 22px;
 	font-weight: 700;
 }
-header{
+header.site-header{
 	background-image: url(image/bg-header.png);
 	background-size: cover;
 	.header{
@@ -33,12 +36,14 @@ header{
 					padding-left: 80px;
 					li{
 						display: inline-block;
-						margin-right: 40px;
+
 						ul{
 							background-color: $color__background-body;
 							padding: 0 20px;
 							li{
-								padding: 15px 0px;
+								a{
+									padding: 15px 0px;
+								}
 							}
 						}
 					}
@@ -108,8 +113,10 @@ header{
 		padding:95px 0 240px 0;
 		text-align: center;
 		.woocommerce-breadcrumb{
+			font-size: 14px;
 			a{
 				color: $color__text-title;
+				font-weight: 500;
 			}
 		}
 	}
@@ -133,6 +140,7 @@ header{
 			padding: 150px 0;
 			input{
 				width: 100%;
+				height: 100px;
 				padding: 20px;
 				background: none;
 				font-size: 30px;

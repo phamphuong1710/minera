@@ -10,14 +10,16 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+
+	<?php echo is_cart() ? '<h2 class="cart_title" >My cart ('.WC()->cart->get_cart_contents_count().' items )</h2>' : ''; ?>
+
 
 	<?php minera_post_thumbnail(); ?>
 
 	<div class="entry-content">
+		
 		<?php
+		echo is_account_page() ? '<div class="row"><div class="col-md-5">' : '';
 		the_content();
 
 		wp_link_pages( array(

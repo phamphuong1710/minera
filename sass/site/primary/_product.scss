@@ -4,11 +4,13 @@
 	width: 112px;
 	height: 40px;
 	margin-right: 20px!important;
+	font-weight: 600;
 
 	input[type=number]{
 		width: 100%!important;
 		height: 100%;
 		color: $color__text-title;
+		font-weight: bold;
 
 	}
 
@@ -36,6 +38,11 @@
 
 	#inc{
 		right: 0;
+	}
+}
+.price{
+	span.woocommerce-Price-amount{
+		font-weight: 500!important;
 	}
 }
 .woocommerce{
@@ -66,7 +73,9 @@
 				color: $color__text-main;
 			}
 
-			
+			form.cart{
+				margin-bottom: 38px;
+			}
 
 			.stock{
 				color: $color__text-title;
@@ -96,8 +105,8 @@
 				text-transform: uppercase;
 				display: block;
 				font-size: 12px;
-				font-weight: 500;
-				margin-bottom: 5px;
+				font-weight: 600;
+				margin-bottom: 15px;
 
 				span{
 					color: $color__text-main;
@@ -150,16 +159,29 @@
 			.woocommerce-product-gallery__image:nth-child(n+2){
 
 				width: 20%;
+				height: 100px;
+
+				a{
+					max-width:100px ;
+					height: 99px;
+					box-sizing: content-box;
+					display: flex;
+					border: 1px solid;
+					justify-content: center;
+					align-items: center;
+					-webkit-box-pack: center;
+					overflow: hidden;
+				}
 
 				img{
-					max-width: 100px;
-					border: 1px solid;
+					vertical-align: middle;
+					overflow: hidden;
 				}
 			}
 		}
 
 		.woocommerce-tabs{
-			padding: 45px 0 70px;
+			padding: 45px 0 50px;
 			border-top: 1px solid $color__background-hr;
 			border-bottom: 1px solid $color__background-hr;
 
@@ -184,6 +206,21 @@
 						font-size: 18px;
 						font-weight: 500;
 						color: $color__text-main;
+						display: block;
+						position: relative;
+
+						span{
+							position: absolute;
+							top: 2px;
+							right: -10px;
+							width: 19px;
+							height: 19px;
+							font-size: 10px;
+							color: $color__text-button;
+							background-color: $color__background-number-review;
+							border-radius: 50%;
+							padding: 3px;
+						}
 					}
 				}
 
@@ -195,7 +232,10 @@
 			}
 
 
+
 			.woocommerce-Tabs-panel{
+				margin-top: 50px;
+
 				h2{
 					display: none;
 				}
@@ -344,6 +384,30 @@
 							}
 						}
 					}
+
+				}
+
+				table.shipping-tab{
+					th,td{
+						padding: 10px 15px;
+					}
+
+					
+
+					th{
+						background-color: $color__background;
+						
+						text-align: left;
+						color: $color__text-title;
+						font-weight: 400;
+					}
+				}
+
+				p.text-shipping-note{
+					span{
+						font-weight: 500;
+						color: $color__text-title;
+					}
 				}
 			}
 		}
@@ -379,9 +443,10 @@
 						opacity: 0;
 						text-align: center;
 						display: block;
+						transition: .5s ease;
 
 						.add_to_cart_button{
-							margin: 85px 0;
+							margin: 100px 0;
 						}
 
 					}
@@ -394,9 +459,6 @@
 					}
 				}
 
-				.button{
-					margin: 85px 0;
-				}
 
 				.woocommerce-loop-product__title{
 					font-weight: 500;

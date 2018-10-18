@@ -1,0 +1,99 @@
+.woocommerce-checkout{
+	#content{
+
+			h3{
+				color: $color__text-title;
+			}
+
+		.select2-selection,
+		.select2-selection__rendered,
+		.select2-selection__arrow{
+			height: 40px;
+		}
+		.woocommerce-shipping-fields{
+
+
+			span{
+				font-weight: 500;
+				color: $color__text-title;
+				font-size: 14px;
+			}
+		}
+
+		.woocommerce-checkout-review-order{
+			border: 1px solid $color__background-hr;
+			background-color: $color__background;
+		}
+
+		form.checkout{
+			table{
+				border: none;
+				font-weight: 500;
+				padding: 45px;
+
+				th,td>span{
+					font-weight: 500;
+				}
+
+				th,td{
+					padding: 10px 0;
+				}
+
+				thead{
+					th{
+						border-bottom: 1px solid $color__background-hr;
+						color: $color__text-main;
+					}
+				}
+
+				tbody{
+					td{
+						border: none;
+						color: $color__text-title;
+
+						span.product-quantity{
+							color: $color__text-main;
+						}
+
+					}
+				}
+
+				tfoot{
+					.cart-subtotal,
+					.shipping{
+
+						color: $color__text-title;
+
+					}
+
+					.order-total{
+						font-size: 18px;
+						color: $color__text-title;
+
+						th{
+							font-weight: bold;
+							color: $color__text-title;
+						}
+						td>strong{
+							font-weight: bold;
+						}
+
+						th,td{
+							border-bottom: 1px solid $color__background-hr;
+							padding:30px 0;
+						}
+					}
+				}
+			}
+
+			#payment{
+				background-color: $color__background;
+
+				#place_order{
+					width: 100%;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}

@@ -29,7 +29,7 @@ if ( $max_value && $min_value === $max_value ) {
 	?>
 	<div class="quantity">
 		<div id="dec" class="btn-quantity"><?php echo esc_html( '-' ); ?></div>
-		<label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></label>
+		
 		<input
 			type="number"
 			id="<?php echo esc_attr( $input_id ); ?>"

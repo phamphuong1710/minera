@@ -286,6 +286,64 @@ add_action( 'woocommerce_review_before', 'minera_review_display_gravatar', 10 );
 
 
 	add_action( 'woocommerce_single_product_summary', 'minera_share_with', 55 );
+
+
+/*
+	custom tap shipping
+*/
+
+	function minera_shipping_content_tab()
+	{
+
+		get_template_part('woocommerce/single-product/tabs/shipping');
+	}
+
+	add_filter('woocommerce_product_tabs','minera_shipping_tabs');
+	function minera_shipping_tabs($tabs)
+	{
+		
+		$tabs['shipping'] = array(
+
+			'title'    => __( 'Shipping', 'minera' ),
+			'priority' => 15,
+			'callback'=> 'minera_shipping_content_tab',
+
+		);
+		// echo "<pre>";
+		// var_dump($tabs);
+		return $tabs;
+	}
+
+/*
+clear shopping cart button
+*/
+
+	add_action( 'init', 'woocommerce_empty_cart_url' );
+
+	function woocommerce_empty_cart_url(){
+
+		global $woocommerce;
+		// var_dump($woocommerce);
+		if ( isset( $_GET['empty-cart'] ) ) {
+			$woocommerce->cart->empty_cart();
+		}
+	}
+
+/*
+edit titlte tab review
+*/ 
+	add_filter( 'woocommerce_product_tabs', 'minera_edit_title_tab_review', 98);
+
+	function minera_edit_title_tab_review($tabs){
+		global $product;
+		$number_review = $product->get_review_count();
+		$title = "Review ".$number_review;
+
+		
+		$tabs['reviews']['title'] = sprintf( __ ( 'Reviews <span>%s</span>', 'minera' ), $number_review );;
+		return $tabs;
+	}
+
 /**
  * Implement the Custom Header feature.
  
@@ -312,4 +370,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

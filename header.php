@@ -72,7 +72,7 @@
 		<span class="close-btn" id="close-btn"><i class="fa fa-close"></i></span>
 		<div class="search-content">
 			<form action="<?php echo esc_url( home_url() ); ?>">
-				<input type="search" name="s" value="" class="search-product">
+				<input type="search" name="s" value="" class="search-product" placeholder="Enter product">
 				<input type="hidden" value="product" name="post-type">
 			</form>
 		</div>

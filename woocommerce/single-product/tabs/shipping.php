@@ -33,21 +33,21 @@ $heading = esc_html( apply_filters( 'woocommerce_product_description_heading', _
 <table class="shipping-tab">
 	<thead>
 		<tr>
-			<th>Shipping Type</th>
-			<th>Cost</th>
-			<th>Estimated Delivery Time</th>
+			<th class="shipping-type">Shipping Type</th>
+			<th class="shipping-cost">Cost</th>
+			<th class="shipping-time">Estimated Delivery Time</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Standard</td>
-			<td>Free</td>
-			<td>Product will be arrived In 3-5 business days.</td>
+			<td class="shipping-type">Standard</td>
+			<td class="shipping-cost">Free</td>
+			<td class="shipping-time">Product will be arrived In 3-5 business days.</td>
 		</tr>
 		<tr>
-			<td>Express</td>
-			<td>$14.90</td>
-			<td>Product will be arrived In 2 business days.</td>
+			<td class="shipping-type">Express</td>
+			<td class="shipping-cost">$14.90</td>
+			<td class="shipping-time">Product will be arrived In 2 business days.</td>
 		</tr>
 	</tbody>
 </table>

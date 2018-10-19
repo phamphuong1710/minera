@@ -10,4 +10,28 @@
 			}
 		}
 	}
+
+	.woocommerce{
+		#content{
+			ul.products.columns-2{
+				li.product{
+
+					width: 100%;
+
+				}
+			}
+		}
+
+	}
+
+	footer{
+		.col-md-5,
+		.col-md-7,
+		.col-md-4{
+			flex: 0 0 100%;
+			max-width: 100%;
+			clear: both;
+		}
+	}
+
 }

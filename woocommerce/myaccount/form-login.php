@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</p>
 				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 
-					<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
+					<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" placeholder="******" />
 				</p>
 
 				<?php do_action( 'woocommerce_login_form' ); ?>

@@ -17,7 +17,7 @@ textarea {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
 	border-radius: 3px;
-	padding: 3px;
+
 
 	&:focus {
 		color: $color__text-input-focus;
@@ -30,6 +30,7 @@ select {
 
 textarea {
 	width: 100%;
+	padding-left: 20px;
 }
 
 input[type="text"],
@@ -40,4 +41,11 @@ input[type="search"],
 input[type="number"],
 input[type="tel"]{
 	height: 40px;
+	
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"]{
+	padding-left: 20px;
 }

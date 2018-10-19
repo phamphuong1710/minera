@@ -1,6 +1,10 @@
 .woocommerce-checkout{
 	#content{
 
+		.woocommerce-info{
+			border-top: none;
+		}
+
 			h3{
 				color: $color__text-title;
 			}
@@ -9,6 +13,7 @@
 		.select2-selection__rendered,
 		.select2-selection__arrow{
 			height: 40px;
+			padding-left: 10px;
 		}
 		.woocommerce-shipping-fields{
 

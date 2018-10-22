@@ -9,7 +9,10 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'container' ); ?>>
+
+
+	<?php minera_post_thumbnail(); ?>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
@@ -23,10 +26,9 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php minera_post_thumbnail(); ?>
-
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<!-- <?php the_excerpt(); ?> -->
+		<?php echo get_woocommerce_price_format(); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">

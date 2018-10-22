@@ -344,6 +344,8 @@ edit titlte tab review
 		return $tabs;
 	}
 
+
+
 /**
  * Implement the Custom Header feature.
  

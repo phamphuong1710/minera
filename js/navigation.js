@@ -47,7 +47,6 @@
 		$(window).resize( function() {
 			if (w>990 && menu.is(':hidden')) {
 				menu.removeAttr('style');
-				$( '.style' ).removeAttr('style');
 			}
 		} );
 } )(jQuery);

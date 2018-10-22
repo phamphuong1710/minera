@@ -19,7 +19,7 @@ header.site-header{
 		display: flex;
 		.site-branding{
 			float: left;
-			max-width: 10%;
+			width: $width__logo;;
 			.logo{
 				float: left;
 			}
@@ -27,7 +27,7 @@ header.site-header{
 
 		.main-menu{
 			float: left;
-			width: 90%;
+			width: calc(100% - #{$width__logo});
 			font-size: 16px;
 			display: flex;
 			.main-navigation{

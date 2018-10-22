@@ -121,6 +121,13 @@
 
 			}
 
+			p.notes{
+
+				label{
+					margin-bottom: 10px;
+				}
+			}
+
 			.posted_in{
 				a{
 					margin-left: 50px;
@@ -164,14 +171,15 @@
 			.woocommerce-product-gallery__image:nth-child(n+2){
 
 				width: 20%;
-				height: 100px;
+				max-height: 100px;
+				padding: 0 10px 0 0;
 
 				a{
 					max-width:100px ;
-					height: 99px;
+					height: auto;
 					display: flex;
 					border: 1px solid;
-					border-top: 2px solid;
+					// border-top: 2px solid;
 					justify-content: center;
 					align-items: center;
 					-webkit-box-pack: center;
@@ -200,6 +208,13 @@
 			}
 
 			ul.tabs{
+
+				&:before{
+
+					border-bottom: none;
+
+				}
+
 				li{
 
 					padding: 0 30px;

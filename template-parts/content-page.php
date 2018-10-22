@@ -19,7 +19,7 @@
 	<div class="entry-content">
 		
 		<?php
-		echo is_account_page() ? '<div class="row"><div class="col-md-5">' : '';
+		echo (is_account_page() && !is_user_logged_in()) ? '<div class="row"><div class="col-md-5">' : '';
 		the_content();
 
 		wp_link_pages( array(

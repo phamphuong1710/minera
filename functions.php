@@ -183,19 +183,31 @@ breadcrumb
 					$title = get_the_title();
 				}
 				elseif (is_product_category()){
-					$title = 'Shop Category';
+					$title = "Shop Category";
+				}
+				elseif ( is_product_tag() ) {
+					$title = "Product Tag";
 				}
 			}
 			else{
 				if ( is_cart() ) {
 					$title = "Shopping Cart";
 				}
-				if ( is_checkout() ) {
+				elseif ( is_checkout() ) {
 					$title = "Check Out";
 				}
 				elseif ( is_category() ) {
-					$title = 'hello';
+					$title = "hello";
 					var_dump(get_the_category());
+				}
+				elseif (is_home()){
+					$title= "Home";
+				}
+				elseif ( is_search() ) {
+					$title = "Search";
+				}
+				elseif ( is_tag() ) {
+					$title = "Archive";
 				}
 				else{
 					$title = get_the_title();

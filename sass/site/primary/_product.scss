@@ -47,6 +47,22 @@
 }
 .woocommerce{
 
+	.star-rating{
+		float: left;
+		margin: 5px 0 25px;
+		font-family: $font__icon-ion;
+
+		&:before{
+			content: "\f383\f383\f383\f383\f383";
+		}
+
+		span{
+			&:before{
+				content: "\f384\f384\f384\f384\f384";
+			}
+		}
+	}
+
 	.woocommerce-message{
 		margin-top: 80px;
 		border-top: none;
@@ -129,14 +145,14 @@
 			}
 
 			.posted_in{
-				a{
+				a:first-child{
 					margin-left: 50px;
 				}
 			}
 
 			.tagged_as{
-				a{
-					margin-left: 90px;
+				a:first-child{
+					margin-left: 85px;
 				}
 			}
 
@@ -300,21 +316,7 @@
 										font-size: 14px;
 									}
 
-									.star-rating{
-										float: left;
-										margin: 5px 0 25px;
-										font-family: $font__icon-ion;
 
-										&:before{
-											content: "\f383\f383\f383\f383\f383";
-										}
-
-										span{
-											&:before{
-												content: "\f384\f384\f384\f384\f384";
-											}
-										}
-									}
 
 									.description{
 										clear: both;

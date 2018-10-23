@@ -21,3 +21,27 @@ section.no-results{
 		}
 	}
 }
+
+
+.search{
+	section{
+		margin-top: 80px;
+
+		.entry-title{
+			margin-bottom: 0;
+
+			a{
+				color: $color__text-title;
+			}
+		}
+
+		.entry-summary{
+			font-size: 18px;
+			margin-top: 10px;
+
+			.del-img{
+				text-decoration: line-through;
+			}
+		}
+	}
+}

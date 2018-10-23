@@ -1082,7 +1082,8 @@ header.site-header {
   #form-search-product .close-btn {
     position: absolute;
     right: 80px;
-    top: 80px; }
+    top: 80px;
+    cursor: pointer; }
 
 /*--------------------------------------------------------------
 ## search
@@ -1101,6 +1102,18 @@ section.no-results form.search-form {
     bottom: 0;
     right: 0;
     color: #fff; }
+
+.search section {
+  margin-top: 80px; }
+  .search section .entry-title {
+    margin-bottom: 0; }
+    .search section .entry-title a {
+      color: #3e3e3e; }
+  .search section .entry-summary {
+    font-size: 18px;
+    margin-top: 10px; }
+    .search section .entry-summary .del-img {
+      text-decoration: line-through; }
 
 /*--------------------------------------------------------------
 ## shop
@@ -1218,6 +1231,15 @@ nav.woocommerce-pagination {
 .price span.woocommerce-Price-amount {
   font-weight: 500 !important; }
 
+.woocommerce .star-rating {
+  float: left;
+  margin: 5px 0 25px;
+  font-family: "Ionicons"; }
+  .woocommerce .star-rating:before {
+    content: "\f383\f383\f383\f383\f383"; }
+  .woocommerce .star-rating span:before {
+    content: "\f384\f384\f384\f384\f384"; }
+
 .woocommerce .woocommerce-message {
   margin-top: 80px;
   border-top: none; }
@@ -1269,10 +1291,10 @@ nav.woocommerce-pagination {
         margin-left: 90px; }
     .woocommerce div.product .summary p.notes label {
       margin-bottom: 10px; }
-    .woocommerce div.product .summary .posted_in a {
+    .woocommerce div.product .summary .posted_in a:first-child {
       margin-left: 50px; }
-    .woocommerce div.product .summary .tagged_as a {
-      margin-left: 90px; }
+    .woocommerce div.product .summary .tagged_as a:first-child {
+      margin-left: 85px; }
     .woocommerce div.product .summary .share-product-with {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1373,14 +1395,6 @@ nav.woocommerce-pagination {
               font-size: 14px; }
             .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #comments ol.commentlist li.comment .comment-text time {
               font-size: 14px; }
-            .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #comments ol.commentlist li.comment .comment-text .star-rating {
-              float: left;
-              margin: 5px 0 25px;
-              font-family: "Ionicons"; }
-              .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #comments ol.commentlist li.comment .comment-text .star-rating:before {
-                content: "\f383\f383\f383\f383\f383"; }
-              .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #comments ol.commentlist li.comment .comment-text .star-rating span:before {
-                content: "\f384\f384\f384\f384\f384"; }
             .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #comments ol.commentlist li.comment .comment-text .description {
               clear: both; }
       .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond {
@@ -1786,16 +1800,16 @@ nav.woocommerce-pagination {
     width: 100%; } }
 
 @media screen and (max-width: 990px) {
-  .woocommerce-account .col-md-6 {
-    padding-top: 50px; }
-  footer.site-footer .col-md-5,
-  footer.site-footer .col-md-7,
-  footer.site-footer .col-md-4 {
+  .col-md-5,
+  .col-md-7,
+  .col-md-4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
     clear: both; }
+  .woocommerce-account .col-md-6 {
+    padding-top: 50px; }
   footer.site-footer .subcribe form input[type="submit"] {
     width: auto; }
   footer.site-footer .info-footer,
@@ -1877,7 +1891,9 @@ nav.woocommerce-pagination {
     width: 100%;
     text-align: center; }
   .site-footer .footer-nav .menu-footer li:not(:last-child) {
-    padding-right: 35px; } }
+    padding-right: 30px; }
+  .site-footer .footer-nav .menu-footer li {
+    font-size: 12px; } }
 
 /*--------------------------------------------------------------
 # Infinite scroll

@@ -17,13 +17,6 @@
 
 @media screen and ( max-width: 990px ){
 
-	.woocommerce-account{
-		.col-md-6{
-			padding-top: 50px;
-		}
-	}
-
-	footer.site-footer{
 		.col-md-5,
 		.col-md-7,
 		.col-md-4{
@@ -33,6 +26,15 @@
 
 
 		}
+
+	.woocommerce-account{
+		.col-md-6{
+			padding-top: 50px;
+		}
+	}
+
+	footer.site-footer{
+
 
 		.subcribe{
 			form{
@@ -271,8 +273,11 @@
 			.menu-footer {
 				li:not(:last-child){
 
-					padding-right: 35px;
+					padding-right: 30px;
 
+				}
+				li{
+					font-size: 12px;
 				}
 			}
 		}

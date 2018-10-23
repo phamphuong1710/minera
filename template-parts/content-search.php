@@ -7,9 +7,13 @@
  * @package minera
  */
 
+
+global $product;
+
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'container' ); ?>>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class( "col-md-4" ); ?>>
 
 
 	<?php minera_post_thumbnail(); ?>
@@ -28,7 +32,32 @@
 
 	<div class="entry-summary">
 		<!-- <?php the_excerpt(); ?> -->
-		<?php echo get_woocommerce_price_format(); ?>
+			<?php if ( $product->is_on_sale() ) {
+			?>
+				<span class="sale-price"><?php echo get_woocommerce_currency_symbol().$product->get_sale_price()."&nbsp"; ?></span>
+
+					<span class="del-img">
+						<?php 
+							echo get_woocommerce_currency_symbol();
+							echo esc_html( $product->get_regular_price() ); 
+						?>
+					</span>
+
+
+			<?php
+			}
+			else{
+			?>
+				<span class="price">
+					
+				<?php 
+					echo get_woocommerce_currency_symbol();
+					echo esc_html( $product->get_regular_price() ); 
+				?>
+				</span>
+			<?php
+			}
+		 ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">

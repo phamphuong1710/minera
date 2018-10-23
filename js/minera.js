@@ -53,6 +53,9 @@ form search header js
 
 	});
 
+	$( ".shipping-calculator-form b .button" ).on( "click", function(){
 
+		location.reload();
+	} );
 
 })(jQuery);

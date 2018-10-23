@@ -53,9 +53,14 @@ form search header js
 
 	});
 
-	$( ".shipping-calculator-form b .button" ).on( "click", function(){
+	$( ".shipping-calculator-form" ).find(".button").addClass("cart-button");
+	$( "[name='update_cart']" ).addClass("cart-button");
 
-		location.reload();
-	} );
+
+	$( ".cart-button" ).on( "click", function(){
+
+		window.location.reload();
+
+	} )
 
 })(jQuery);

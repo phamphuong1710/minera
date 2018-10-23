@@ -141,7 +141,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						<a class="clear-shopping" href="<?php echo esc_url(wc_get_cart_url().'?empty-cart')?>"><?php esc_html_e( 'Clear Shopping Cart', 'woocommerce' ); ?></a>
 						<a class="button" href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_shop_page_id' ) ) ); ?>"><?php esc_html_e( 'Continue Shopping', 'woocommerce' ); ?></a>
 
-<!-- 					<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button> -->
+					<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
 
 					<?php do_action( 'woocommerce_cart_actions' ); ?>
 

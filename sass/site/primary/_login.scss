@@ -11,19 +11,26 @@
 			input[type="text"],
 			input[type="email"],
 			input[type="password"]{
-				margin-bottom: 12px;
+				margin-bottom: 10px;
 				height: 40px;
 				padding-left: 20px;
 			}
 
 			label{
-				margin-bottom: 15px;
+				margin-bottom: 10px;
 			}
 
-		.col-md-5{
-			.woocommerce{
-				width: 82%;
+		.woocommerce{
 
+			button{
+				font-weight: 400;
+				width: 105px;
+			}
+			.col-md-5{
+				.login-register{
+					width: 85%;
+
+				}
 					h4{
 						background-color: $color__background-header-login;
 						padding: 15px 20px;
@@ -53,12 +60,13 @@
 
 
 
-					button{
-						font-weight: 400;
-						width: 105px;
-					}
+				}
+			}
 
-
+			.col-md-6{
+				form{
+					border: none;
+					padding: 0;
 				}
 			}
 		}

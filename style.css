@@ -1697,30 +1697,33 @@ nav.woocommerce-pagination {
   .woocommerce-account #content input[type="text"],
   .woocommerce-account #content input[type="email"],
   .woocommerce-account #content input[type="password"] {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     height: 40px;
     padding-left: 20px; }
   .woocommerce-account #content label {
-    margin-bottom: 15px; }
-  .woocommerce-account #content .col-md-5 .woocommerce {
-    width: 82%; }
-    .woocommerce-account #content .col-md-5 .woocommerce h4 {
-      background-color: #e8e8e8;
-      padding: 15px 20px; }
-    .woocommerce-account #content .col-md-5 .woocommerce form.login {
-      background-color: #f3f3f3;
-      border: none;
-      margin: 0; }
-      .woocommerce-account #content .col-md-5 .woocommerce form.login span.login-note {
-        margin: 15px 0 25px;
-        display: block; }
-      .woocommerce-account #content .col-md-5 .woocommerce form.login .form-row a {
-        float: right;
-        display: inline-block;
-        margin-top: 5px; }
-      .woocommerce-account #content .col-md-5 .woocommerce form.login button {
-        font-weight: 400;
-        width: 105px; }
+    margin-bottom: 10px; }
+  .woocommerce-account #content .woocommerce button {
+    font-weight: 400;
+    width: 105px; }
+  .woocommerce-account #content .woocommerce .col-md-5 .login-register {
+    width: 85%; }
+  .woocommerce-account #content .woocommerce .col-md-5 h4 {
+    background-color: #e8e8e8;
+    padding: 15px 20px; }
+  .woocommerce-account #content .woocommerce .col-md-5 form.login {
+    background-color: #f3f3f3;
+    border: none;
+    margin: 0; }
+    .woocommerce-account #content .woocommerce .col-md-5 form.login span.login-note {
+      margin: 15px 0 25px;
+      display: block; }
+    .woocommerce-account #content .woocommerce .col-md-5 form.login .form-row a {
+      float: right;
+      display: inline-block;
+      margin-top: 5px; }
+  .woocommerce-account #content .woocommerce .col-md-6 form {
+    border: none;
+    padding: 0; }
 
 .woocommerce-account .woocommerce-MyAccount-navigation ul {
   list-style-type: none;

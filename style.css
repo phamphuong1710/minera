@@ -1608,6 +1608,9 @@ nav.woocommerce-pagination {
   .woocommerce-cart #content .cart-collaterals .cart_totals table tr.order-total td strong {
     color: #3e3e3e; }
 
+.woocommerce-cart #content .cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button {
+  width: 200px; }
+
 .woocommerce-cart #content .cart-collaterals .wc-proceed-to-checkout a.button {
   font-weight: 500;
   font-size: 14px; }
@@ -1627,7 +1630,7 @@ nav.woocommerce-pagination {
   padding-left: 10px; }
 
 .woocommerce-checkout #content .select2-selection__rendered {
-  padding-top: 4px; }
+  padding-top: 6px; }
 
 .woocommerce-checkout #content .woocommerce-shipping-fields span {
   font-weight: 500;
@@ -1637,6 +1640,12 @@ nav.woocommerce-pagination {
 .woocommerce-checkout #content .woocommerce-checkout-review-order {
   border: 1px solid #e8e8e8;
   background-color: #f3f3f3; }
+
+.woocommerce-checkout #content #order_comments_field label {
+  margin-bottom: 15px; }
+
+.woocommerce-checkout #content #order_comments_field .woocommerce-input-wrapper textarea {
+  padding-top: 10px; }
 
 .woocommerce-checkout #content form.checkout table {
   border: none;

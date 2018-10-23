@@ -16,7 +16,7 @@
 		}
 
 		.select2-selection__rendered{
-			padding-top: 4px;
+			padding-top: 6px;
 		}
 		.woocommerce-shipping-fields{
 
@@ -31,6 +31,18 @@
 		.woocommerce-checkout-review-order{
 			border: 1px solid $color__background-hr;
 			background-color: $color__background;
+		}
+
+
+		#order_comments_field{
+			label{
+				margin-bottom: 15px;
+			}
+			.woocommerce-input-wrapper{
+				textarea{
+					padding-top: 10px
+				}
+			}
 		}
 
 		form.checkout{

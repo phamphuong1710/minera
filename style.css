@@ -1308,6 +1308,17 @@ nav.woocommerce-pagination {
             margin: 0 20px; }
   .woocommerce div.product div.images {
     margin-bottom: 80px; }
+    .woocommerce div.product div.images .image-up {
+      padding: 0 10px 0 0; }
+    .woocommerce div.product div.images .image-list {
+      padding: 0 10px 0 0; }
+      .woocommerce div.product div.images .image-list .img-item {
+        overflow: hidden; }
+        .woocommerce div.product div.images .image-list .img-item img {
+          overflow: hidden;
+          border: 1px solid; }
+    .woocommerce div.product div.images .slider-nav {
+      margin-top: 25px; }
     .woocommerce div.product div.images .woocommerce-product-gallery__image:first-child {
       margin-bottom: 20px; }
     .woocommerce div.product div.images .woocommerce-product-gallery__image:nth-child(n+2) {
@@ -1408,6 +1419,18 @@ nav.woocommerce-pagination {
           display: -ms-flexbox;
           display: flex;
           margin: 15px 0; }
+        .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond form p.stars.selected a.active:before, .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond form p.stars:hover a:before, .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond form p.stars.selected a:not(.active):before, .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond form p.stars.selected a.active:before {
+          color: #ddaa20; }
+        .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond form p.stars.selected a.active::before {
+          content: '\f384';
+          color: #ddaa20;
+          opacity: 1; }
+        .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond form p.stars.selected a.active ~ a::before {
+          content: '\f833';
+          color: #d9d9d9;
+          opacity: .25; }
+        .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond form p.stars a:before, .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond form p.stars a:hover ~ a:before, .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond form p.stars.selected a.active ~ a:before {
+          color: #d9d9d9; }
         .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond form p.stars {
           margin: 5px auto auto 20px; }
           .woocommerce div.product .woocommerce-tabs .woocommerce-Tabs-panel #reviews #respond form p.stars a:before {
@@ -1689,6 +1712,40 @@ nav.woocommerce-pagination {
       .woocommerce-account #content .col-md-5 .woocommerce form.login button {
         font-weight: 400;
         width: 105px; }
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .woocommerce-account .woocommerce-MyAccount-navigation ul li {
+    display: block;
+    border-bottom: 1px solid #e8e8e8; }
+    .woocommerce-account .woocommerce-MyAccount-navigation ul li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 15px 0;
+      color: #3e3e3e; }
+      .woocommerce-account .woocommerce-MyAccount-navigation ul li a:after {
+        font-family: "Fontawesome"; }
+  .woocommerce-account .woocommerce-MyAccount-navigation ul .woocommerce-MyAccount-navigation-link--dashboard a:after {
+    content: "\f0e4"; }
+  .woocommerce-account .woocommerce-MyAccount-navigation ul .woocommerce-MyAccount-navigation-link--orders a:after {
+    content: "\f291"; }
+  .woocommerce-account .woocommerce-MyAccount-navigation ul .woocommerce-MyAccount-navigation-link--downloads a:after {
+    content: "\f1c6"; }
+  .woocommerce-account .woocommerce-MyAccount-navigation ul .woocommerce-MyAccount-navigation-link--edit-address a:after {
+    content: "\f015"; }
+  .woocommerce-account .woocommerce-MyAccount-navigation ul .woocommerce-MyAccount-navigation-link--edit-account a:after {
+    content: "\f007"; }
+  .woocommerce-account .woocommerce-MyAccount-navigation ul .woocommerce-MyAccount-navigation-link--customer-logout a:after {
+    content: "\f08b"; }
+
+.woocommerce-account .woocommerce-MyAccount-content {
+  padding-left: 30px; }
 
 /*--------------------------------------------------------------
 ## footer

@@ -132,11 +132,17 @@ function minera_scripts() {
 	wp_enqueue_script( 'icon-script', 'https://unpkg.com/ionicons@4.4.4/dist/ionicons.js', array(), '20151215', true );
 	wp_enqueue_style( 'fontawesome-style', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css","all" );
 
+	wp_enqueue_style( 'slick-css', get_template_directory_uri()."/css/slick.css","all" );
+	wp_enqueue_style( 'slick-theme-css', get_template_directory_uri()."/css/slick-theme.css","all" );
+
+
 	wp_enqueue_style( 'minera-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'minera-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'minera-js', get_template_directory_uri() . '/js/minera.js', array('jquery'), null, true);
+
+	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), null, true);
 
 	wp_enqueue_script( 'minera-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -356,7 +362,11 @@ edit titlte tab review
 		return $tabs;
 	}
 
+/*
+	remove sale flash
+*/
 
+	remove_action( 'woocommerce_before_single_product_summary','woocommerce_show_product_sale_flash', 10 );
 
 /**
  * Implement the Custom Header feature.

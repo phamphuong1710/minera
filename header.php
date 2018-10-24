@@ -26,7 +26,7 @@
 	<header id="masthead" class="site-header">
 
 		<div class="header">
-			<div class="<?php echo is_shop() ? 'container-fluid' : 'container'; ?>">
+			<div class="<?php echo (is_shop() || is_search() ) ? 'container-fluid' : 'container'; ?>">
 				<div class="site-branding">
 					<?php minera_logo(); ?>
 				</div><!-- .site-branding -->
@@ -73,20 +73,10 @@
 		<div class="search-content">
 			<form action="<?php echo esc_url( home_url() ); ?>">
 
-				<?php 
-					if ( is_woocommerce() || is_checkout() || is_cart() ) { ?>
-						<input type="search" name="s" value="" class="search-product" placeholder="Enter product">
-						<input type="hidden" value="product" name="post-type">
-				<?php
-					}
-					else{
-
-				 ?>
-
-					<input type="search" name="s" value="" class="search-post" placeholder="Enter post">
-
-				<?php } ?>
-
+				
+				<input type="search" name="s" value="" class="search-product" placeholder="Enter product">
+				<input type="hidden" value="product" name="post-type">
+				
 			</form>
 		</div>
 

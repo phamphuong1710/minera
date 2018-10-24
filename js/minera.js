@@ -12,7 +12,7 @@ form search header js
 	} );
 
 
-	$(document).ready(function(){
+
 	 $('.slider-for').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -28,20 +28,20 @@ form search header js
 		centerMode: true,
 		focusOnSelect: true
 	});
-});
+
 /*
 
 */
-	jQuery('.quantity').each(function() {
+	$('.quantity').each(function() {
 		var spinner = jQuery(this),
 		input = spinner.find('input[type="number"]'),
 		btnUp = spinner.find('#inc'),
 		btnDown = spinner.find('#dec'),
 		min = input.attr('min'),
 		max = input.attr('max');
-		console.log(btnUp);
+
 		btnUp.click(function() {
-			console.log(btnUp);
+
 			var oldValue = parseFloat(input.val());
 			if (oldValue > max) {
 				var newVal = oldValue;

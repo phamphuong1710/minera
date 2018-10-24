@@ -140,9 +140,10 @@ function minera_scripts() {
 
 	wp_enqueue_script( 'minera-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), null, true);
+
 	wp_enqueue_script( 'minera-js', get_template_directory_uri() . '/js/minera.js', array('jquery'), null, true);
 
-	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), null, true);
 
 	wp_enqueue_script( 'minera-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -221,7 +222,7 @@ breadcrumb
 				
 			}
 			?>
-				<h1 class="page-title-header"><?php echo esc_html($title, 'minera') ?></h1>
+				<h1 class="page-title-header"><?php echo esc_html($title) ?></h1>
 				<?php woocommerce_breadcrumb(); ?>
 			<?php
 		}
@@ -235,7 +236,7 @@ add description product
 		if ( $product->get_short_description() && ! is_product() ) {
 		?>
 			<div class="description-product">
-				<?php echo esc_html_e( $product->get_short_description() ); ?>
+				<?php echo esc_html( $product->get_short_description() ); ?>
 				<!-- <?php echo the_excerpt() ?> -->
 			</div>
 		<?php
@@ -287,7 +288,7 @@ add_action( 'woocommerce_review_before', 'minera_review_display_gravatar', 10 );
 	{
 	?>
 		<div class="share-product-with">
-			<?php esc_html_e( 'Share' ) ?>
+			<?php esc_html_e( 'Share', "minera" ) ?>
 			<ul class="share-prduct">
 				<li class="facebook">
 					<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>"></a>

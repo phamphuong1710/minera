@@ -54,7 +54,7 @@ if ( !in_array($post_thumbnail_id, $attachment_ids) ) {
 					
 						<div class="image-up">
 							<div class="img-item">
-								<img src="<?php echo $image_src[0] ?>" alt="Image Product" class="complete">
+								<img src="<?php echo esc_html($image_src[0]); ?>" alt="Image Product" class="complete">
 							</div>
 						</div>
 					
@@ -78,7 +78,7 @@ if ( !in_array($post_thumbnail_id, $attachment_ids) ) {
 					
 						<div class="image-list">
 							<div class="img-item">
-								<img src="<?php echo $image_src[0] ?>" alt="Image Product" class="complete">
+								<img src="<?php echo esc_html($image_src[0]); ?>" alt="Image Product" class="complete">
 							</div>
 						</div>
 					

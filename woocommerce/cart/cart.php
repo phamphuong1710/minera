@@ -1,4 +1,4 @@
-<?php
+esc<?php
 /**
  * Cart Page
  *
@@ -28,10 +28,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 		<thead>
 			<tr>
 				
-				<th class="product-name"><?php esc_html_e( 'Product Name', 'woocommerce' ); ?></th>
-				<th class="product-price"><?php esc_html_e( 'Unit Price', 'woocommerce' ); ?></th>
-				<th class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
-				<th class="product-subtotal"><?php esc_html_e( 'Total Price', 'woocommerce' ); ?></th>
+				<th class="product-name"><?php esc_html_e( 'Product Name', 'minera' ); ?></th>
+				<th class="product-price"><?php esc_html_e( 'Unit Price', 'minera' ); ?></th>
+				<th class="product-quantity"><?php esc_html_e( 'Quantity', 'minera' ); ?></th>
+				<th class="product-subtotal"><?php esc_html_e( 'Total Price', 'minera' ); ?></th>
 				<th class="product-remove">&nbsp;</th>
 			</tr>
 		</thead>
@@ -49,7 +49,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<tr class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 
 
-						<td class="product-name" data-title="<?php esc_attr_e( 'Product', 'woocommerce' ); ?>">
+						<td class="product-name" data-title="<?php esc_attr_e( 'Product', 'minera' ); ?>">
 						<?php
 						$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 
@@ -76,13 +76,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 						</td>
 
-						<td class="product-price" data-title="<?php esc_attr_e( 'Price', 'woocommerce' ); ?>">
+						<td class="product-price" data-title="<?php esc_attr_e( 'Price', 'minera' ); ?>">
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 							?>
 						</td>
 
-						<td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
+						<td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'minera' ); ?>">
 						<?php
 						if ( $_product->is_sold_individually() ) {
 							$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -100,7 +100,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 						</td>
 
-						<td class="product-subtotal" data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>">
+						<td class="product-subtotal" data-title="<?php esc_attr_e( 'Total', 'minera' ); ?>">
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 							?>
@@ -112,7 +112,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 									'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
 									esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-									__( 'Remove this item', 'woocommerce' ),
+									__( 'Remove this item', 'minera' ),
 									esc_attr( $product_id ),
 									esc_attr( $_product->get_sku() )
 								), $cart_item_key );
@@ -131,17 +131,17 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 					<?php if ( wc_coupons_enabled() ) { ?>
 						<div class="coupon">
-							<label for="coupon_code"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> 
-							<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" />
-							<button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply', 'woocommerce' ); ?></button>
+							<label for="coupon_code"><?php esc_html_e( 'Coupon:', 'minera' ); ?></label> 
+							<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'minera' ); ?>" />
+							<button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'minera' ); ?>"><?php esc_attr_e( 'Apply', 'minera' ); ?></button>
 							<?php do_action( 'woocommerce_cart_coupon' ); ?>
 						</div>
 					<?php } ?>
 
-						<a class="clear-shopping" href="<?php echo esc_url(wc_get_cart_url().'?empty-cart')?>"><?php esc_html_e( 'Clear Shopping Cart', 'woocommerce' ); ?></a>
-						<a class="button" href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_shop_page_id' ) ) ); ?>"><?php esc_html_e( 'Continue Shopping', 'woocommerce' ); ?></a>
+						<a class="clear-shopping" href="<?php echo esc_url(wc_get_cart_url().'?empty-cart')?>"><?php esc_html_e( 'Clear Shopping Cart', 'minera' ); ?></a>
+						<a class="button" href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_shop_page_id' ) ) ); ?>"><?php esc_html_e( 'Continue Shopping', 'minera' ); ?></a>
 
-					<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+					<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'minera' ); ?>"><?php esc_html_e( 'Update cart', 'minera' ); ?></button>
 
 					<?php do_action( 'woocommerce_cart_actions' ); ?>
 

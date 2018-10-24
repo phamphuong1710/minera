@@ -12,7 +12,7 @@ get_header();
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 
 				<?php if ( have_posts() ) : ?>

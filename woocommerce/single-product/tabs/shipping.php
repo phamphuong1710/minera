@@ -22,33 +22,33 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post;
 
-$heading = esc_html( apply_filters( 'woocommerce_product_description_heading', __( 'Description', 'woocommerce' ) ) );
+$heading = esc_html( apply_filters( 'woocommerce_product_description_heading', __( 'Description', 'minera' ) ) );
 
 ?>
 
 <?php if ( $heading ) : ?>
-  <h2><?php echo $heading; ?></h2>
+  <h2><?php echo esc_html( $heading ); ?></h2>
 <?php endif; ?>
 
 <table class="shipping-tab">
 	<thead>
 		<tr>
-			<th class="shipping-type">Shipping Type</th>
-			<th class="shipping-cost">Cost</th>
-			<th class="shipping-time">Estimated Delivery Time</th>
+			<th class="shipping-type"><?php esc_html( "Shipping Type" ); ?></th>
+			<th class="shipping-cost"><?php esc_html( "Cost" ); ?></th>
+			<th class="shipping-time"><?php esc_html( "Estimated Delivery Time" ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td class="shipping-type">Standard</td>
-			<td class="shipping-cost">Free</td>
-			<td class="shipping-time">Product will be arrived In 3-5 business days.</td>
+			<td class="shipping-type"><?php esc_html( "Standard" ); ?></td>
+			<td class="shipping-cost"><?php esc_html( "Free" ); ?></td>
+			<td class="shipping-time"><?php esc_html( "Product will be arrived In 3-5 business days." ); ?></td>
 		</tr>
 		<tr>
-			<td class="shipping-type">Express</td>
-			<td class="shipping-cost">$14.90</td>
-			<td class="shipping-time">Product will be arrived In 2 business days.</td>
+			<td class="shipping-type"><?php esc_html( "Express" ); ?></td>
+			<td class="shipping-cost"><?php esc_html( "$14.90" ); ?></td>
+			<td class="shipping-time"><?php esc_html( "Product will be arrived In 2 business days." ); ?></td>
 		</tr>
 	</tbody>
 </table>
-<p class="text-shipping-note"><span>Note:</span>&nbspEstimated delivery time is only for North America.</p>
+<p class="text-shipping-note"><span><?php esc_html( "Note:" ); ?></span><?php esc_html( "&nbspEstimated delivery time is only for North America." ); ?></p>

@@ -25,7 +25,7 @@ if ( $max_value && $min_value === $max_value ) {
 	<?php
 } else {
 	/* translators: %s: Quantity. */
-	$labelledby = ! empty( $args['product_name'] ) ? sprintf( __( '%s quantity', 'woocommerce' ), strip_tags( $args['product_name'] ) ) : '';
+	$labelledby = ! empty( $args['product_name'] ) ? sprintf( __( '%s quantity', 'minera' ), strip_tags( $args['product_name'] ) ) : '';
 	?>
 	<div class="quantity">
 		<div id="dec" class="btn-quantity"><?php echo esc_html( '-' ); ?></div>
@@ -39,7 +39,7 @@ if ( $max_value && $min_value === $max_value ) {
 			max="<?php echo esc_attr( 0 < $max_value ? $max_value : '' ); ?>"
 			name="<?php echo esc_attr( $input_name ); ?>"
 			value="<?php echo esc_attr( $input_value ); ?>"
-			title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ); ?>"
+			title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'minera' ); ?>"
 			size="4"
 			pattern="<?php echo esc_attr( $pattern ); ?>"
 			inputmode="<?php echo esc_attr( $inputmode ); ?>"

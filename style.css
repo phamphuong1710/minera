@@ -1114,6 +1114,27 @@ section.no-results form.search-form {
     margin-top: 10px; }
     .search section .entry-summary .del-img {
       text-decoration: line-through; }
+  .search section article.product .img-product {
+    float: left;
+    max-width: 310px;
+    position: relative; }
+    .search section article.product .img-product img {
+      max-width: 310px; }
+  .search section article.product .info-product {
+    float: left;
+    width: calc(100% - 310px);
+    padding: 0 0 0 30px; }
+    .search section article.product .info-product .entry-title {
+      font-size: 20px;
+      padding: 0 0 20px;
+      font-weight: 500; }
+      .search section article.product .info-product .entry-title a {
+        color: #000; }
+    .search section article.product .info-product a.button {
+      display: block;
+      padding: 10px 0 !important; }
+    .search section article.product .info-product .price {
+      font-size: 24px; }
 
 /*--------------------------------------------------------------
 ## shop
@@ -1148,9 +1169,8 @@ select {
   .woocommerce .woocommerce-content ul.columns-2 li.product .img-product {
     float: left;
     max-width: 310px;
-    position: relative; }
-    .woocommerce .woocommerce-content ul.columns-2 li.product .img-product img {
-      max-width: 370px; }
+    position: relative;
+    max-width: 310px; }
   .woocommerce .woocommerce-content ul.columns-2 li.product .info-product {
     float: left;
     width: calc(100% - 310px);

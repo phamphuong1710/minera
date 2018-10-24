@@ -11,9 +11,9 @@ get_header();
 ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main woocommerce-content">
 			<div class="container-fluid">
-				<div class="row">
+
 
 				<?php if ( have_posts() ) : ?>
 
@@ -26,8 +26,10 @@ get_header();
 						</h1>
 					</header><!-- .page-header -->
 
+					<ul class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
 					<?php
 					/* Start the Loop */
+
 					while ( have_posts() ) :
 						the_post();
 
@@ -39,6 +41,9 @@ get_header();
 						get_template_part( 'template-parts/content', 'search' );
 
 					endwhile;
+					?>
+					</ul>
+					<?php
 
 					the_posts_navigation();
 
@@ -48,7 +53,7 @@ get_header();
 
 				endif;
 				?>
-			</div>
+
 		</div>
 
 		</main><!-- #main -->

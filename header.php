@@ -82,4 +82,5 @@
 
 	</div>
 	<div id="content" class="site-content">
+	<?php echo is_search() ? "<div class='woocommerce'>" : "" ?>
 

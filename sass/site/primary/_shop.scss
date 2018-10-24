@@ -24,14 +24,19 @@ select{
 	border: none;
 	outline: 0;
 }
-.woocommerce{
+.woocommerce,
+.search{
 	.woocommerce-content{
 		ul.columns-2{
+			margin: 0;
+			padding: 0;
+			list-style: none;
 			li.product{
 
 				width: 50%;
 				padding: 0 15px 50px;
 				margin: 0;
+				overflow: hidden;
 
 				.img-product{
 					float: left;

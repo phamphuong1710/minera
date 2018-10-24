@@ -24,66 +24,29 @@ section.no-results{
 
 
 .search{
-	section{
-		margin-top: 80px;
+	
+	.woocommerce-content{
 
-		.entry-title{
-			margin-bottom: 0;
+		ul.columns-2{
 
-			a{
-				color: $color__text-title;
-			}
-		}
 
-		.entry-summary{
-			font-size: 18px;
-			margin-top: 10px;
 
-			.del-img{
-				text-decoration: line-through;
-			}
-		}
 
-		article.product{
-			.img-product{
+			li.product{
+
 				float: left;
-				max-width: $width__img-product-shop;
 				position: relative;
-
-				img{
-
-					max-width: 310px;
-				}
 			}
 
-			.info-product{
-				float: left;
-				width: calc(100% - #{$width__img-product-shop});
-				padding: 0 0 0 30px;
+			a.button{
 
-				.entry-title{
-
-					font-size: 20px;
-					padding: 0 0 20px;
-					font-weight: 500;
-
-
-					a{
-						color: $color__text-product-title;
-					}
-				}
-
-				a.button{
-
-					display: block;
-					padding: 10px 0!important;
-				}
-
-				.price{
-					font-size: 24px;
-				}
+				display: block;
 			}
-
 		}
+
+		ul.products{
+			margin-top: 80px!important;
+		}
+
 	}
 }

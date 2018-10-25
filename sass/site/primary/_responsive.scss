@@ -207,6 +207,12 @@
 				}
 			}
 		}
+
+
+		#form-contact,
+		#contact-us{
+			width: 100%!important;
+		}
 	}
 
 
@@ -283,3 +289,10 @@
 		}
 	}
 }
+
+// @media (max-width: 768px){
+// 	.elementor-221 .elementor-element.elementor-element-36db2b6,
+// 	.elementor-221 .elementor-element.elementor-element-ed7ea91{
+// 		width: 100%!important;
+// 	}
+// }

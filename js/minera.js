@@ -79,7 +79,13 @@ form search header js
 
 		window.location.reload();
 
-	} )
+	} );
+
+	$( ".add_to_cart_button" ).on( "click", function(){
+
+		window.location.reload();
+
+	} );
 
 
 

@@ -1628,6 +1628,68 @@ nav.woocommerce-pagination {
   font-size: 14px; }
 
 /*--------------------------------------------------------------
+## contact
+--------------------------------------------------------------*/
+.elementor .elementor-shortcode input,
+.elementor .elementor-shortcode textarea {
+  border: none;
+  border-bottom: 1px solid #222222;
+  width: 100%;
+  margin-bottom: 35px;
+  padding: 18px 0;
+  background: none;
+  font-size: 14px;
+  border-radius: 0; }
+
+.elementor .elementor-shortcode textarea {
+  height: 150px; }
+
+.elementor .elementor-shortcode ::-webkit-input-placeholder {
+  color: #222; }
+
+.elementor .elementor-shortcode :-ms-input-placeholder {
+  color: #222; }
+
+.elementor .elementor-shortcode ::-ms-input-placeholder {
+  color: #222; }
+
+.elementor .elementor-shortcode ::placeholder {
+  color: #222; }
+
+.elementor .elementor-shortcode input[type="submit"] {
+  background-color: #222;
+  color: #fff;
+  text-align: center; }
+
+.elementor .elementor-shortcode input {
+  height: 50px; }
+
+.elementor #contact-us {
+  position: relative; }
+  .elementor #contact-us #zoa-email,
+  .elementor #contact-us #social {
+    right: 0;
+    left: 0; }
+  .elementor #contact-us #zoa-email {
+    position: absolute;
+    top: 35%;
+    text-align: center; }
+    .elementor #contact-us #zoa-email:before {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 15%;
+      background-color: #fff;
+      margin: 0 auto; }
+  .elementor #contact-us #social {
+    position: absolute;
+    top: 50%; }
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .elementor-221 .elementor-element.elementor-element-36db2b6 {
+    width: 50% !important; } }
+
+/*--------------------------------------------------------------
 ## checkout
 --------------------------------------------------------------*/
 .woocommerce-checkout #content .woocommerce-info {
@@ -1953,6 +2015,9 @@ nav.woocommerce-pagination {
     .woocommerce-cart #content form table.cart tbody td.actions .button {
       clear: both;
       width: 50%; }
+  .woocommerce-cart #form-contact,
+  .woocommerce-cart #contact-us {
+    width: 100% !important; }
   .woocommerce-page #customer_details {
     margin-bottom: 50px; }
   .woocommerce-page form .form-row-first,

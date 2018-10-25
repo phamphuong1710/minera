@@ -1,0 +1,74 @@
+.elementor{
+	.elementor-shortcode{
+		input,
+		textarea{
+			border: none;
+			border-bottom: 1px solid $color__border-input-elementor;
+			width: 100%;
+			margin-bottom: 35px;
+			padding: 18px 0;
+			background: none;
+			font-size: 14px;
+			border-radius: 0;
+		}
+
+		textarea{
+			height: 150px;
+		}
+
+		::placeholder{
+			color: $color__text-elementor;
+		}
+
+		input[type="submit"]{
+			background-color: $color__text-elementor;
+			color: #fff;
+			text-align: center;
+		}
+		input{
+			height: 50px;
+		}
+	}
+
+
+	#contact-us{
+		position: relative;
+
+		#zoa-email,
+		#social{
+			right: 0;
+			left: 0;
+		}
+
+		#zoa-email{
+			position: absolute;
+			top: 35%;
+			text-align: center;
+
+			&:before{
+				content: "";
+				display: block;
+				height: 2px;
+				width: 15%;
+				background-color: #fff;
+				margin: 0 auto;
+			}
+
+		}
+
+		#social{
+			position: absolute;
+			top: 50%
+		}
+	}
+
+
+
+
+}
+
+	@media (max-width: 1024px) and (min-width: 768px){
+		.elementor-221 .elementor-element.elementor-element-36db2b6 {
+			width: 50%!important;
+		}
+	}

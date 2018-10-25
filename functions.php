@@ -369,6 +369,13 @@ edit titlte tab review
 
 	remove_action( 'woocommerce_before_single_product_summary','woocommerce_show_product_sale_flash', 10 );
 
+
+
+
+
+
+
+
 /**
  * Implement the Custom Header feature.
  

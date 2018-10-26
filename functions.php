@@ -1,4 +1,5 @@
 <?php
+
 /**
  * minera functions and definitions
  *
@@ -371,15 +372,27 @@ edit titlte tab review
 
 
 
+add_filter('add_to_cart_fragments', 'woocommerce_header_add_to_cartplus_fragment');
+function woocommerce_header_add_to_cartplus_fragment( $fragments ) {
+	global $woocommerce;
+	ob_start();
+	?>
+		<span class="number-product"><?php echo esc_html( WC()->cart->get_cart_contents_count() ); ?></span>
+	
+	<?php
+	$fragments['span.number-product'] = ob_get_clean();//a.cartplus-contents,a.cart-button
+	ob_end_clean();
+	return $fragments;
 
+}
 
 
 
 
 /**
- * Implement the Custom Header feature.
- 
-require get_template_directory() . '/inc/custom-header.php';
+ * Implement the Elementor.
+ */
+require get_template_directory() . '/inc/elementor.php';
 
 /**
  * Custom template tags for this theme.

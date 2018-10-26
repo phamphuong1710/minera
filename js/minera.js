@@ -81,11 +81,6 @@ form search header js
 
 	} );
 
-	$( ".add_to_cart_button" ).on( "click", function(){
-
-		window.location.reload();
-
-	} );
 
 
 

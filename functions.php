@@ -178,7 +178,7 @@ Logo
 	}
 
 /**
-breadcrumb
+ * breadcrumb
 */
 
 	if ( !function_exists( 'minera_breadcrumb' ) ) {

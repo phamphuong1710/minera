@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<div class="container">
+			<div class="<?php echo is_page( get_page_by_title('Product')->ID ) ? 'container-fluid' : 'container'; ?>">
 			<?php
 			while ( have_posts() ) :
 				the_post();

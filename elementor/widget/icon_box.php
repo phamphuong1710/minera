@@ -111,7 +111,7 @@ class Widget_Minera_Icon_Box extends Widget_Base
 				'label'       => esc_html__( "Title & Description", 'minera' ),
 				'type'        => Controls_Manager::TEXT,
 				'default'     => '',
-				'placeholder' => esc_html__('Enter your title', 'minare' ),
+				'placeholder' => esc_html__('Enter your title', 'minera' ),
 				'labek_block' => true
 			]
 		);
@@ -448,7 +448,7 @@ class Widget_Minera_Icon_Box extends Widget_Base
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name'     => esc_html__( 'title_typography' ),
+				'name'     => esc_html__( 'title_typography', 'minera' ),
 				'selector' => '{{WRAPPER}} .minera-icon-box .minera-content-icon-box .icon-box-title .minera-text-title',
 				'scheme'   => Scheme_Typography::TYPOGRAPHY_1
 			]
@@ -483,7 +483,7 @@ class Widget_Minera_Icon_Box extends Widget_Base
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name'     => esc_html__( 'description_typography' ),
+				'name'     => esc_html__( 'description_typography', 'minera' ),
 				'selector' => '{{WRAPPER}} .minera-icon-box .minera-content-icon-box .text-description',
 				'scheme'   => Scheme_Typography::TYPOGRAPHY_1
 			]

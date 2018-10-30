@@ -27,3 +27,67 @@
 @mixin column-width($numberColumns: 3) {
 	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
+// Width image product
+@mixin img-product(){
+	float: left;
+	max-width: $width__img-product-shop;
+	position: relative;
+}
+// Info product in shop
+@mixin info-product(){
+	float: left;
+	width: calc(100% - #{$width__img-product-shop});
+	padding: 0 0 0 30px;
+}
+// product title
+@mixin title-product(){
+	font-size: 20px;
+	padding: 0 0 20px;
+	font-weight: 500;
+
+
+	a{
+		color: $color__text-product-title;
+	}
+}
+
+@mixin price-product(){
+	font-size: 24px;
+	color: $color__text-main;
+	span.woocommerce-Price-amount{
+		font-weight:400;
+	}
+}
+
+
+@mixin pagination($padding){
+			a.page-numbers,
+			span.current{
+				width: 30px;
+				height: 30px;
+				padding: $padding;
+				display: inline-block;
+			}
+
+			span.current{
+				background-color: $color__background-button;
+				border-radius: 50%;
+				color: $color__text-button;
+			}
+
+			&:not(:last-child){
+				padding: 0 30px 0 0;
+			}
+
+
+			a.page-numbers{
+				color: $color__text-title;
+
+				&:hover{
+					border-radius: 50%;
+					background-color: $color__background-button;
+					color: $color__text-button;
+				}
+			}
+
+}

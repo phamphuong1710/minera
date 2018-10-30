@@ -85,7 +85,7 @@ html {
     max-width: 1140px; } }
 
 .container-fluid {
-  width: 100%;
+  width: 100% !important;
   padding-right: 80px;
   padding-left: 80px;
   margin-right: auto;
@@ -1124,12 +1124,14 @@ section.no-results form.search-form {
 --------------------------------------------------------------*/
 .button,
 .submit {
-  width: 160px;
+  min-width: 160px;
   height: 40px;
   color: #fff !important;
   background-color: #3e3e3e !important;
-  padding: 14px 0 !important;
-  text-align: center; }
+  padding: 14px 20px !important;
+  text-align: center;
+  clear: both;
+  font-weight: 500 !important; }
 
 .page-title {
   display: none; }
@@ -1201,7 +1203,8 @@ nav.woocommerce-pagination {
       nav.woocommerce-pagination ul.page-numbers li span.current {
         width: 30px;
         height: 30px;
-        padding: 8px; }
+        padding: 8px;
+        display: inline-block; }
       nav.woocommerce-pagination ul.page-numbers li span.current {
         background-color: #3e3e3e;
         border-radius: 50%;
@@ -1214,6 +1217,8 @@ nav.woocommerce-pagination {
           border-radius: 50%;
           background-color: #3e3e3e;
           color: #fff; }
+      nav.woocommerce-pagination ul.page-numbers li:not(:last-child) {
+        padding: 0 30px 0 0; }
 
 /*--------------------------------------------------------------
 ## product
@@ -1694,6 +1699,135 @@ nav.woocommerce-pagination {
 @media (max-width: 1024px) and (min-width: 768px) {
   .elementor-221 .elementor-element.elementor-element-36db2b6 {
     width: 50% !important; } }
+
+/*--------------------------------------------------------------
+## elementor_products
+--------------------------------------------------------------*/
+#content .container-fluid .elementor section.elementor-section .elementor-container {
+  max-width: 100%; }
+
+.elementor .columns-1 li,
+.elementor .columns-2 li,
+.elementor .columns-3 li,
+.elementor .columns-4 li,
+.elementor .columns-5 li {
+  padding: 0 15px; }
+
+.elementor .columns-1 li {
+  width: 100%; }
+
+.elementor .columns-2 li {
+  width: 50%; }
+
+.elementor .columns-3 li {
+  width: 33.33%; }
+
+.elementor .columns-4 li {
+  width: 25%; }
+
+.elementor .columns-5 li {
+  width: 20%; }
+
+.elementor ul.products {
+  padding: 0; }
+
+.elementor ins {
+  background: none; }
+
+.elementor span.onsale {
+  min-height: 3.236em;
+  min-width: 3.236em;
+  font-size: 1em;
+  font-weight: 700;
+  position: absolute;
+  text-align: center;
+  line-height: 3.236;
+  top: -.5em;
+  left: -.5em;
+  margin: 0;
+  border-radius: 100%;
+  background-color: #77a464;
+  color: #fff;
+  font-size: .857em;
+  z-index: 9; }
+
+.elementor .woocommerce-loop-product__title a {
+  color: #000; }
+
+.elementor .description-product {
+  padding: 20px 0; }
+
+.elementor .button {
+  margin-top: 1em;
+  margin: 0;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  padding: .618em 1em;
+  border-radius: 3px;
+  left: auto;
+  border: 0;
+  display: inline-block; }
+
+.elementor .price {
+  font-size: 24px;
+  color: #8f8f8f; }
+  .elementor .price span.woocommerce-Price-amount {
+    font-weight: 400; }
+
+.elementor ul.products {
+  float: left;
+  list-style: none; }
+  .elementor ul.products li {
+    margin-bottom: 50px; }
+
+.elementor ul.products.columns-2 li .img-product {
+  float: left;
+  max-width: 310px;
+  position: relative; }
+
+.elementor ul.products.columns-2 li .info-product {
+  float: left;
+  width: calc(100% - 310px);
+  padding: 0 0 0 30px; }
+  .elementor ul.products.columns-2 li .info-product .woocommerce-loop-product__title {
+    font-size: 20px;
+    padding: 0 0 20px;
+    font-weight: 500; }
+    .elementor ul.products.columns-2 li .info-product .woocommerce-loop-product__title a {
+      color: #000; }
+  .elementor ul.products.columns-2 li .info-product .price {
+    font-size: 24px;
+    color: #8f8f8f; }
+    .elementor ul.products.columns-2 li .info-product .price span.woocommerce-Price-amount {
+      font-weight: 400; }
+
+.elementor .pagination {
+  text-align: center;
+  margin-top: 60px; }
+  .elementor .pagination a.page-numbers,
+  .elementor .pagination span.current {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    display: inline-block; }
+  .elementor .pagination span.current {
+    background-color: #3e3e3e;
+    border-radius: 50%;
+    color: #fff; }
+  .elementor .pagination:not(:last-child) {
+    padding: 0 30px 0 0; }
+  .elementor .pagination a.page-numbers {
+    color: #3e3e3e; }
+    .elementor .pagination a.page-numbers:hover {
+      border-radius: 50%;
+      background-color: #3e3e3e;
+      color: #fff; }
+  .elementor .pagination span,
+  .elementor .pagination a {
+    margin: 0 10px; }
 
 /*--------------------------------------------------------------
 ## checkout

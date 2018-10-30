@@ -93,12 +93,11 @@ class Widget_Minera_Product extends Widget_Base
 		];
 		$products = new \WP_Query($args);
 		$total_page = $products->max_num_pages;
-		echo "<ul class='row products columns-".$settings['col']."'>";
+		
 		if ($products->have_posts()) {
-			
+			echo "<ul class='row products columns-".$settings['col']."'>";
 		
 			while ( $products->have_posts() ) : $products->the_post();
-				global $product;
 				wc_get_template_part('content','product');
 			endwhile;
 			

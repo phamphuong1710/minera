@@ -1828,6 +1828,11 @@ nav.woocommerce-pagination {
   .elementor .pagination a {
     margin: 0 10px; }
 
+@media screen and (max-width: 990px) {
+  .elementor ul.products.columns-2 li.product {
+    display: block;
+    width: 100%; } }
+
 /*--------------------------------------------------------------
 ## checkout
 --------------------------------------------------------------*/
@@ -2079,6 +2084,9 @@ nav.woocommerce-pagination {
 --------------------------------------------------------------*/
 @media screen and (max-width: 1199px) {
   .woocommerce .container-fluid #content ul.products.columns-2 li.product {
+    width: 100%; }
+  .elementor ul.products.columns-2 li.product {
+    display: block;
     width: 100%; } }
 
 @media screen and (max-width: 990px) {
@@ -2108,6 +2116,13 @@ nav.woocommerce-pagination {
 @media screen and (max-width: 780px) {
   .container-fluid {
     padding: 0 40px; }
+  .elementor ul.products.columns-2 li.product .info-product {
+    float: none;
+    clear: both;
+    padding: 0;
+    width: 100%; }
+    .elementor ul.products.columns-2 li.product .info-product .description-product {
+      padding: 10px 0; }
   .woocommerce .woocommerce-content ul.columns-2 li.product .info-product {
     float: none;
     clear: both;

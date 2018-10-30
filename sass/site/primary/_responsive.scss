@@ -13,6 +13,14 @@
 			}
 		}
 	}
+	.elementor{
+		ul.products.columns-2{
+			li.product{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
 }
 
 @media screen and ( max-width: 990px ){
@@ -71,6 +79,26 @@
 
 	.container-fluid{
 		padding: 0 40px;
+	}
+	.elementor{
+		ul.products.columns-2{
+			li.product{
+				.info-product{
+
+					float: none;
+					clear: both;
+					padding: 0;
+					width: 100%;
+
+
+					.description-product{
+
+						padding:10px 0;
+
+					}
+				}
+			}
+		}
 	}
 
 	.woocommerce {

@@ -1147,48 +1147,47 @@ select {
   border: none;
   outline: 0; }
 
-.woocommerce .woocommerce-content ul.columns-2,
-.search .woocommerce-content ul.columns-2 {
+.woocommerce .woocommerce-content ul.products.columns-2,
+.search .woocommerce-content ul.products.columns-2 {
   margin: 0;
   padding: 0;
   list-style: none; }
-  .woocommerce .woocommerce-content ul.columns-2 li.product,
-  .search .woocommerce-content ul.columns-2 li.product {
+  .woocommerce .woocommerce-content ul.products.columns-2 li.product,
+  .search .woocommerce-content ul.products.columns-2 li.product {
     width: 50%;
     padding: 0 15px 50px;
-    margin: 0;
-    overflow: hidden; }
-    .woocommerce .woocommerce-content ul.columns-2 li.product .img-product,
-    .search .woocommerce-content ul.columns-2 li.product .img-product {
+    margin: 0; }
+    .woocommerce .woocommerce-content ul.products.columns-2 li.product .img-product,
+    .search .woocommerce-content ul.products.columns-2 li.product .img-product {
       float: left;
       max-width: 310px;
       position: relative;
       max-width: 310px; }
-    .woocommerce .woocommerce-content ul.columns-2 li.product .info-product,
-    .search .woocommerce-content ul.columns-2 li.product .info-product {
+    .woocommerce .woocommerce-content ul.products.columns-2 li.product .info-product,
+    .search .woocommerce-content ul.products.columns-2 li.product .info-product {
       float: left;
       width: calc(100% - 310px);
       padding: 0 0 0 30px; }
-      .woocommerce .woocommerce-content ul.columns-2 li.product .info-product .woocommerce-loop-product__title,
-      .search .woocommerce-content ul.columns-2 li.product .info-product .woocommerce-loop-product__title {
+      .woocommerce .woocommerce-content ul.products.columns-2 li.product .info-product .woocommerce-loop-product__title,
+      .search .woocommerce-content ul.products.columns-2 li.product .info-product .woocommerce-loop-product__title {
         font-size: 20px;
         padding: 0 0 20px;
         font-weight: 500; }
-        .woocommerce .woocommerce-content ul.columns-2 li.product .info-product .woocommerce-loop-product__title a,
-        .search .woocommerce-content ul.columns-2 li.product .info-product .woocommerce-loop-product__title a {
+        .woocommerce .woocommerce-content ul.products.columns-2 li.product .info-product .woocommerce-loop-product__title a,
+        .search .woocommerce-content ul.products.columns-2 li.product .info-product .woocommerce-loop-product__title a {
           color: #000; }
-      .woocommerce .woocommerce-content ul.columns-2 li.product .info-product .price,
-      .search .woocommerce-content ul.columns-2 li.product .info-product .price {
+      .woocommerce .woocommerce-content ul.products.columns-2 li.product .info-product .price,
+      .search .woocommerce-content ul.products.columns-2 li.product .info-product .price {
         font-size: 24px;
         color: #8f8f8f; }
-        .woocommerce .woocommerce-content ul.columns-2 li.product .info-product .price span.woocommerce-Price-amount,
-        .search .woocommerce-content ul.columns-2 li.product .info-product .price span.woocommerce-Price-amount {
+        .woocommerce .woocommerce-content ul.products.columns-2 li.product .info-product .price span.woocommerce-Price-amount,
+        .search .woocommerce-content ul.products.columns-2 li.product .info-product .price span.woocommerce-Price-amount {
           font-weight: 400; }
-      .woocommerce .woocommerce-content ul.columns-2 li.product .info-product .description-product,
-      .search .woocommerce-content ul.columns-2 li.product .info-product .description-product {
+      .woocommerce .woocommerce-content ul.products.columns-2 li.product .info-product .description-product,
+      .search .woocommerce-content ul.products.columns-2 li.product .info-product .description-product {
         padding: 35px 0; }
-    .woocommerce .woocommerce-content ul.columns-2 li.product a.added_to_cart,
-    .search .woocommerce-content ul.columns-2 li.product a.added_to_cart {
+    .woocommerce .woocommerce-content ul.products.columns-2 li.product a.added_to_cart,
+    .search .woocommerce-content ul.products.columns-2 li.product a.added_to_cart {
       margin-left: 20px;
       font-weight: 600;
       color: #3e3e3e; }

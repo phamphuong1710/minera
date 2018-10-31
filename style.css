@@ -2116,15 +2116,26 @@ nav.woocommerce-pagination {
 @media screen and (max-width: 780px) {
   .container-fluid {
     padding: 0 40px; }
-  .elementor ul.products.columns-2 li.product .info-product {
-    float: none;
-    clear: both;
-    padding: 0;
-    width: 100%; }
-    .elementor ul.products.columns-2 li.product .info-product .description-product {
-      padding: 10px 0; }
+  .elementor ul.products.columns-2 li.product {
+    margin-bottom: 60px; }
+    .elementor ul.products.columns-2 li.product .info-product {
+      float: none !important;
+      clear: both;
+      padding: 0 0 0 30px;
+      margin: 0 auto; }
+      .elementor ul.products.columns-2 li.product .info-product .description-product {
+        padding: 10px 0; }
+      .elementor ul.products.columns-2 li.product .info-product h2.woocommerce-loop-product__title {
+        padding: 15px 0 0; }
+    .elementor ul.products.columns-2 li.product .img-product {
+      float: none !important;
+      margin: 0 auto; }
+  .woocommerce .woocommerce-content ul.columns-2 li.product .img-product {
+    float: none !important;
+    margin: 0 auto; }
   .woocommerce .woocommerce-content ul.columns-2 li.product .info-product {
-    float: none;
+    margin: 0 auto;
+    float: none !important;
     clear: both;
     padding: 0;
     width: 100%; }
@@ -2178,6 +2189,11 @@ nav.woocommerce-pagination {
   .woocommerce-page form .form-row-last {
     width: 100%; } }
 
+@media screen and (max-width: 680px) {
+  .elementor ul.products.columns-2 li.product .info-product,
+  .woocommerce .woocommerce-content ul.products.columns-2 li.product .info-product, .search .woocommerce-content ul.products.columns-2 li.product .info-product {
+    width: 310px; } }
+
 @media screen and (max-width: 480px) {
   .container-fluid {
     padding: 0 15px; }
@@ -2190,6 +2206,10 @@ nav.woocommerce-pagination {
   .woocommerce ul.products[class*=columns-] li.product {
     width: 100%;
     text-align: center; }
+  .elementor ul.products.columns-2 li.product .info-product,
+  .woocommerce .woocommerce-content ul.products.columns-2 li.product .info-product, .search .woocommerce-content ul.products.columns-2 li.product .info-product {
+    width: 100%;
+    padding: 0; }
   .site-footer .footer-nav .menu-footer li:not(:last-child) {
     padding-right: 30px; }
   .site-footer .footer-nav .menu-footer li {

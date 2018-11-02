@@ -83,9 +83,6 @@ if ( ! function_exists( 'minera_setup' ) ) :
 
 
 		add_theme_support( 'woocommerce' );
-		// add_theme_support( 'wc-product-gallery-zoom' );
-		// add_theme_support( 'wc-product-gallery-lightbox' );
-		// add_theme_support( 'wc-product-gallery-slider' );
 	}
 endif;
 add_action( 'after_setup_theme', 'minera_setup' );
@@ -123,6 +120,31 @@ function minera_widgets_init() {
 }
 add_action( 'widgets_init', 'minera_widgets_init' );
 
+
+add_action( 'elementor/frontend/after_register_scripts', 'minera_elementor_live_preview' );
+function minera_elementor_live_preview(){
+		wp_register_script(
+			'accordion-js',
+			get_template_directory_uri() . '/js/accordion.js',
+			array('jquery'),
+			null,
+			true
+		);
+}
+
+add_action( 'elementor/preview/enqueue_scripts', 'minera_scripts_in_preview_mode' );
+function minera_scripts_in_preview_mode(){
+	wp_enqueue_script(
+		'minera-elementor-preview',
+		get_template_directory_uri() . '/js/preview.js',
+		array(),
+		null,
+		true
+	);
+
+}
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -143,16 +165,32 @@ function minera_scripts() {
 
 	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), null, true);
 
+	wp_register_script( 'accordion-js', get_template_directory_uri() . '/js/accordion.js', array('jquery'), null, true);
+
+
+
+
+	wp_enqueue_script( 'waypoints-js', 'http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js', array('jquery'), null, true);
+	wp_enqueue_script( 'counterup-js', get_template_directory_uri() . '/js/jquery.counterup.min.js', array('jquery'), null, true);
+	wp_enqueue_script( 'counter-js', get_template_directory_uri() . '/js/counter.js', array('jquery'), null, true);
+
+
 	wp_enqueue_script( 'minera-js', get_template_directory_uri() . '/js/minera.js', array('jquery'), null, true);
 
 
-	wp_enqueue_script( 'minera-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'minera-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'minera_scripts' );
+
+
+
+
+
+
 
 /**
 Logo

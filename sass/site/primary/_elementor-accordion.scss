@@ -1,0 +1,66 @@
+.minera-title-item.accordion-item-active{
+	border-bottom: 1px solid ;
+}
+
+.minera-accordion{
+
+	border: 1px solid;
+	.elementor-accordion-icon-opened{
+		display: none;
+	}
+	.minera-accordion-item{
+		overflow: hidden;
+		cursor: pointer;
+		&:not(:last-child){
+			border-bottom: 1px solid;
+		}
+		
+
+		.minera-title-item{
+			.minera-tab-title{
+				margin: 0;
+				padding: 10px 20px;
+			}
+		}
+
+
+
+		.minera-content-item{
+			display: none;
+			padding: 15px 20px;
+		}
+
+	}
+
+	.minera-accordion-active{
+		.accordion-item-active{
+			.elementor-accordion-icon-opened{
+				display: inline-block;
+			}
+
+			.elementor-accordion-icon-closed{
+				display: none;
+			}
+		}
+
+		.minera-content-item{
+			display: block;
+		}
+	}
+
+	.minera-accordion-icon{
+		padding: 5px;
+	}
+}
+
+// Counter
+
+.minera-counter{
+	text-align: center;
+
+
+}
+
+.minera-counter-number{
+	font-size: 64px;
+}

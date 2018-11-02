@@ -1208,8 +1208,6 @@ nav.woocommerce-pagination {
         background-color: #3e3e3e;
         border-radius: 50%;
         color: #fff; }
-      nav.woocommerce-pagination ul.page-numbers li:not(:last-child) {
-        padding: 0 30px 0 0; }
       nav.woocommerce-pagination ul.page-numbers li a.page-numbers {
         color: #3e3e3e; }
         nav.woocommerce-pagination ul.page-numbers li a.page-numbers:hover {
@@ -1816,8 +1814,6 @@ nav.woocommerce-pagination {
     background-color: #3e3e3e;
     border-radius: 50%;
     color: #fff; }
-  .elementor .pagination:not(:last-child) {
-    padding: 0 30px 0 0; }
   .elementor .pagination a.page-numbers {
     color: #3e3e3e; }
     .elementor .pagination a.page-numbers:hover {
@@ -1828,10 +1824,41 @@ nav.woocommerce-pagination {
   .elementor .pagination a {
     margin: 0 10px; }
 
-@media screen and (max-width: 990px) {
-  .elementor ul.products.columns-2 li.product {
-    display: block;
-    width: 100%; } }
+/*--------------------------------------------------------------
+## elementor_accordion
+--------------------------------------------------------------*/
+.minera-title-item.accordion-item-active {
+  border-bottom: 1px solid; }
+
+.minera-accordion {
+  border: 1px solid; }
+  .minera-accordion .elementor-accordion-icon-opened {
+    display: none; }
+  .minera-accordion .minera-accordion-item {
+    overflow: hidden;
+    cursor: pointer; }
+    .minera-accordion .minera-accordion-item:not(:last-child) {
+      border-bottom: 1px solid; }
+    .minera-accordion .minera-accordion-item .minera-title-item .minera-tab-title {
+      margin: 0;
+      padding: 10px 20px; }
+    .minera-accordion .minera-accordion-item .minera-content-item {
+      display: none;
+      padding: 15px 20px; }
+  .minera-accordion .minera-accordion-active .accordion-item-active .elementor-accordion-icon-opened {
+    display: inline-block; }
+  .minera-accordion .minera-accordion-active .accordion-item-active .elementor-accordion-icon-closed {
+    display: none; }
+  .minera-accordion .minera-accordion-active .minera-content-item {
+    display: block; }
+  .minera-accordion .minera-accordion-icon {
+    padding: 5px; }
+
+.minera-counter {
+  text-align: center; }
+
+.minera-counter-number {
+  font-size: 64px; }
 
 /*--------------------------------------------------------------
 ## checkout

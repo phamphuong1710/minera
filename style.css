@@ -1861,6 +1861,48 @@ nav.woocommerce-pagination {
   font-size: 64px; }
 
 /*--------------------------------------------------------------
+## elementor
+--------------------------------------------------------------*/
+.minera-gallery-image .figure-item {
+  float: left;
+  display: inline-block;
+  text-align: center; }
+  .minera-gallery-image .figure-item img {
+    margin: 0 auto; }
+
+.minera-gallery-image .gallery-size-thumbnail .figure-item img {
+  max-width: 150px;
+  max-height: 150px; }
+
+.minera-gallery-image .gallery-size-medium .figure-item img {
+  max-width: 300px;
+  max-height: 300px; }
+
+.minera-gallery-image .gallery-size-woocommerce_thumbnail .figure-item img {
+  max-width: 370px;
+  max-height: 370px; }
+
+.minera-gallery-image .gallery-size-woocommerce_gallery_thumbnail .figure-item img,
+.minera-gallery-image .gallery-size-shop_thumbnail .figure-item img {
+  max-width: 100px;
+  max-height: 100px; }
+
+.minera-gallery-image .gallery.gallery-columns-1 .figure-item {
+  width: 100%; }
+
+.minera-gallery-image .gallery.gallery-columns-2 .figure-item {
+  width: 50%; }
+
+.minera-gallery-image .gallery.gallery-columns-3 .figure-item {
+  width: 33.33%; }
+
+.minera-gallery-image .gallery.gallery-columns-4 .figure-item {
+  width: 25%; }
+
+.minera-gallery-image .gallery.gallery-columns-5 .figure-item {
+  width: 20%; }
+
+/*--------------------------------------------------------------
 ## checkout
 --------------------------------------------------------------*/
 .woocommerce-checkout #content .woocommerce-info {

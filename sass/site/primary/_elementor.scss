@@ -1,0 +1,65 @@
+.minera-gallery-image{
+
+	.figure-item{
+		float: left;
+		display: inline-block;
+		text-align: center;
+
+		img{
+			margin: 0 auto;
+		}
+	}
+
+	.gallery-size-thumbnail .figure-item img{
+		max-width: 150px;
+		max-height: 150px
+
+	}
+
+	.gallery-size-medium .figure-item img{
+		max-width: 300px;
+		max-height: 300px
+
+	}
+
+	.gallery-size-woocommerce_thumbnail .figure-item img{
+		max-width: 370px;
+		max-height: 370px
+
+	}
+
+	.gallery-size-woocommerce_gallery_thumbnail .figure-item img,
+	.gallery-size-shop_thumbnail .figure-item img{
+		max-width: 100px;
+		max-height: 100px
+
+	}
+
+
+	.gallery.gallery-columns-1 .figure-item{
+		width: 100%;
+
+	}
+
+	.gallery.gallery-columns-2 .figure-item{
+		width: 50%;
+
+	}
+
+	.gallery.gallery-columns-3 .figure-item{
+		width: 33.33%;
+
+	}
+
+	.gallery.gallery-columns-4 .figure-item{
+		width: 25%;
+
+	}
+
+	.gallery.gallery-columns-5 .figure-item{
+		width: 20%;
+
+	}
+
+
+}

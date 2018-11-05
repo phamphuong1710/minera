@@ -1,7 +1,8 @@
-jQuery(document).ready(function () {
+jQuery(document).ready(function ($) {
 
 
 	function accordion() {
+		// alert(32);
 		var accordion = $( '.minera-accordion-item .minera-title-item' );
 		var t = accordion.length;
 		for (var i = 0; i < t; i++ ) {
@@ -54,4 +55,4 @@ jQuery(document).ready(function () {
 
 		});
 	}
-});
+})
